@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href="insurancestylesheets.css"> 
+        <link rel = "stylesheet" type = "text/css" href="headerstylesheet.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>         
+         <nav id = "navbar">
+            <a class  = "nav-link" href = "index.html">Home</a>
+            <a class  = "nav-link" href = "clinic.html">The Clinic</a>
+            <a class  = "nav-link" href = "services.html">Our Services</a>
+            <a class  = "nav-link" href = "insurance.html">Insurance</a>
+            <a class  = "nav-link" href = "doctors.html">The Doctors</a>
+            <a class  = "nav-link" href = "brands.html">Featured Brands</a>
+            <img src = "images/mapicon.png">
+        </nav>
+        
+         <header>
+            <img id = "header-img"  src = "https://static.wixstatic.com/media/b904c8_31731766ac164900901846e31b3f7f97~mv2.png/v1/fill/w_358,h_100,al_c,q_85,usm_0.66_1.00_0.01/logo_PNG.webp">
+            <h1>Eye See Eyecare</h1>
+            <p>Optometrist-Eyecare-Glasses</p>
+        </header>
+        
+        
+        <div id = "banner">
+            <h2>Insurance Plans Available For Direct Billing</h2>
+            <p>Coverage You Can Count On</p>
+        </div>
+        
+        <div id = "companyList">
+                <span class = "company"></span>
+                <span class = "company"></span>
+                 <span class = "company"></span>
+                <span class = "company"></span>
+                <span class = "company"></span>
+                <span class = "company"></span>
+                <span class = "company"></span>
+                <span class = "company"></span>
+        </div>
+        
+        <script>
+            var prevScrollpos = window.pageYOffset;
+
+var navBar = document.getElementById("navbar");
+window.onscroll = function() {
+    
+// navigation bar hidden on scroll down
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos ) {
+    navBar.style.top = "0";
+  } else {
+    navBar.style.top = "-110px";
+  }
+  if(currentScrollPos < 10){
+      navBar.style.boxShadow = "none";
+  }
+  else{
+      navBar.style.boxShadow = "0.5px 0.5px 50px 5px rgba(0,0,0,0.5)";
+  }
+  prevScrollpos = currentScrollPos;
+ 
+};
+
+        </script>
+    </body>
+</html>

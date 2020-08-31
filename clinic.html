@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href="clinicstylesheets.css"> 
+        <link rel = "stylesheet" type = "text/css" href="headerstylesheet.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+            <nav id = "navbar">
+            <a class  = "nav-link" href = "index.html">Home</a>
+            <a class  = "nav-link" href = "clinic.html">The Clinic</a>
+            <a class  = "nav-link" href = "services.html">Our Services</a>
+            <a class  = "nav-link" href = "insurance.html">Insurance</a>
+            <a class  = "nav-link" href = "doctors.html">The Doctors</a>
+            <a class  = "nav-link" href = "brands.html">Featured Brands</a>
+            <img src = "images/mapicon.png">
+        </nav>
+        
+        <header>
+            <img id = "header-img"  src = "https://static.wixstatic.com/media/b904c8_31731766ac164900901846e31b3f7f97~mv2.png/v1/fill/w_358,h_100,al_c,q_85,usm_0.66_1.00_0.01/logo_PNG.webp">
+            <h1>Eye See Eyecare</h1>
+            <p>Optometrist-Eyecare-Glasses</p>
+        </header>
+        <span id = "parallax"></span>
+        
+        <div id ="letterOuter">
+            <div id = "letterInner">
+                <h2>About Us</h2>
+                <p>
+                    At I See Eyecare we strive to provide you the best services for your vision and eye health. We offer you 
+                    Comprehensive Eye Exams, with state of the art atmosphere and optical equipment, our authorefracto/keratometer
+                    connected to our electronic phoropter help us to give you the must accurate prescription we can do, we offer you 
+                    Retinal Imaging, non-contact Tonometry and Pachymetry that give us very good details of your ocular health without touching your face  and keeping a good distance for your comfort and your safety! Visual Field Testing are available on site as well for patients that need them.
+                </p>
+
+                <p>
+                    We have an array of designer frames (ophthalmic and sunglasses), high end lenses (Zeiss) and contact lenses. Our staff is 
+                    extremely knowledgeable and will help advise you with all of your optical needs, including frame and prescription lens 
+                    choices that best suit you. 
+                </p>
+
+                <p>
+                    Call to book an appointment today!
+                </p>
+            </div>
+        </div>
+        
+        <script>
+            var prevScrollpos = window.pageYOffset;
+
+var navBar = document.getElementById("navbar");
+window.onscroll = function() {
+    
+// navigation bar hidden on scroll down
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos ) {
+    navBar.style.top = "0";
+  } else {
+    navBar.style.top = "-110px";
+  }
+  if(currentScrollPos < 10){
+      navBar.style.boxShadow = "none";
+  }
+  else{
+      navBar.style.boxShadow = "0.5px 0.5px 50px 5px rgba(0,0,0,0.5)";
+  }
+  prevScrollpos = currentScrollPos;
+ 
+};
+        </script>
+    </body>
+</html>

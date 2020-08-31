@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31-Aug-2020, 1:00:17 PM
+    Author     : johnc
+*/
+
+hr{
+    border-top: 1px solid red;
+    width: 50%;
+}
+
+.brands >img{
+    max-width: 200px;
+    height: auto;
+}
+
+#brand-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+}
+.brands{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 80px 20px 20px 20px;
+    height: 200px;
+    width: 300px;
+    background: whitesmoke;
+    align-items: center;
+    justify-content: flex-end;
+}

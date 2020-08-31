@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href="servicestylesheet.css"> 
+        <link rel = "stylesheet" type = "text/css" href="headerstylesheet.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+          <nav id = "navbar">
+            <a class  = "nav-link" href = "index.html">Home</a>
+            <a class  = "nav-link" href = "clinic.html">The Clinic</a>
+            <a class  = "nav-link" href = "services.html">Our Services</a>
+            <a class  = "nav-link" href = "insurance.html">Insurance</a>
+            <a class  = "nav-link" href = "doctors.html">The Doctors</a>
+            <a class  = "nav-link" href = "brands.html">Featured Brands</a>
+            <img src = "images/mapicon.png">
+        </nav>
+        
+        <header>
+            <img id = "header-img"  src = "https://static.wixstatic.com/media/b904c8_31731766ac164900901846e31b3f7f97~mv2.png/v1/fill/w_358,h_100,al_c,q_85,usm_0.66_1.00_0.01/logo_PNG.webp">
+            <h1>Eye See Eyecare</h1>
+            <p>Optometrist-Eyecare-Glasses</p>
+        </header>
+ 
+        
+
+        <h2>Services</h2>
+        <p id = "subtitle]">Care By Professionals You Can Trust</p>
+        
+        <div id = "services-list">
+            <div class = "services">
+                <img class = "service-img" src = "https://static.wixstatic.com/media/b904c8_9698db3865aa4914a051fd3443f3b86e~mv2.jpeg/v1/crop/x_0,y_0,w_3024,h_3024/fill/w_460,h_460,al_c,q_80,usm_0.66_1.00_0.01/IMG_4510.webp">
+                <div class="info">
+                    <h3>Service</h3>
+                    <h4>Caption</h4>
+                    <p>Paragraph to describe the services provided by the employer such as stuff1</p>
+                </div>
+            </div>
+            
+            <div class = "services">
+                <img class = "service-img" src ="https://static.wixstatic.com/media/b904c8_d5bcd9efca984b80a8dbaf8bd1f7ac27~mv2.jpg/v1/fill/w_460,h_460,al_c,q_80,usm_0.66_1.00_0.01/81095075_124232422392662_612965643011175.webp">    
+                <div class = "info">
+                    <h3>Service</h3>
+                    <h4>Caption</h4>
+                    <p>Paragraph to describe the services provided by the employer such as stuff1</p>
+                </div>
+            </div>
+            
+            <div class = "services">
+                <img class = "service-img" src="https://static.wixstatic.com/media/0f32f940131c4c36a4148d635242f8cd.jpg/v1/fill/w_460,h_460,al_c,q_80,usm_0.66_1.00_0.01/Blue%20eye%20on%20grey%20background.webp">
+                <div class = "info">
+                    <h3>Service</h3>
+                    <h4>Caption</h4>
+                    <p>Paragraph to describe the services provided by the employer such as stuff1</p>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            var prevScrollpos = window.pageYOffset;
+
+var navBar = document.getElementById("navbar");
+window.onscroll = function() {
+    
+// navigation bar hidden on scroll down
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos ) {
+    navBar.style.top = "0";
+  } else {
+    navBar.style.top = "-110px";
+  }
+  if(currentScrollPos < 10){
+      navBar.style.boxShadow = "none";
+  }
+  else{
+      navBar.style.boxShadow = "0.5px 0.5px 50px 5px rgba(0,0,0,0.5)";
+  }
+  prevScrollpos = currentScrollPos;
+ 
+};
+        </script>
+    </body>
+</html>
