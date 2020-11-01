@@ -24,6 +24,7 @@ h3, h1, h2{
 #navbar{
     position: fixed;
     left: 0px;
+    top:0px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -39,12 +40,19 @@ h3, h1, h2{
     margin: 0px 5px;
     text-decoration:none;
     color: black;
+    transition: 0.5s;
 }
 
 #navbar > img{
-    height: 32px;
-    width: 32px;
+    margin-top: 10px;
+    height: 28px;
+    width: 28px;
 }
+
+.nav-link:hover{
+    background: lightcoral;
+}
+
 
 
 header{
@@ -74,4 +82,18 @@ footer{
     background: whitesmoke;
     align-items: center;
     justify-content: flex-end;
+}
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 600px) {
+   
+        #navbar{
+        display: none;
+        right:0px;
+        margin: 0px;
+        flex-direction: column;
+        height: 800px;
+        width: 150px;
+        justify-content: center;
+    }
 }

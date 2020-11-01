@@ -29,31 +29,6 @@ h2{
     word-spacing: 2px;
     color: orangered;
 }
-#navbar{
-    position: fixed;
-    left: 0px;
-    top:0px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background:whitesmoke;
-    padding: 5px 0px;
-    z-index: 99;
-    box-shadow: none;
-    transition: 0.5s;
-}
-
-.nav-link{
-    padding: 15px;
-    margin: 0px 5px;
-    text-decoration:none;
-    color: black;
-}
-
-#navbar > img{
-    height: 32px;
-    width: 32px;
-}
 
 #banner{
     height: 200px;

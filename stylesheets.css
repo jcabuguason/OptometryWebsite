@@ -100,7 +100,7 @@ body{
 }
 
 #hours > *{
-    color: limegreen;
+    color: navy;
 }
 #hours > p{
     line-height: 2px;
@@ -220,3 +220,4 @@ footer{
   from {opacity: .7} 
   to {opacity: 1}
 }
+
