@@ -107,8 +107,15 @@ body{
 }
 
 #insta-feed{
+    width: 60%;
+}
+
+#parent-insta-feed{
+    display: flex;
+    justify-content: center;
 }
 #curator-feed-default-feed-layout{
+    
 }
 
 footer{
@@ -123,11 +130,37 @@ footer{
 
 
 .mySlides{
+    height: 40%;
+    background: skyblue;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/000/381/921/non_2x/abstract-technology-banner-template-vector.jpg");
 }
+
+.slide-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.slide-content > img {
+    max-height: 100%;
+    width: 50%;
+}
+.slide-title{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 90%;
+    background: blue;
+    padding: 20px;
+}
+
 
 /* Slideshow container */
 .slideshow-container {
-  width: 100%;
+  width: 95%;
   height: 100%;
   position: relative;
   margin: auto;
@@ -151,12 +184,12 @@ footer{
 
 /* Position the "next button" to the right */
 .next {
-  right: 100px;
+  right: 10px;
   border-radius: 3px 0 0 3px;
 }
 
 .prev{
-    left: 100px;
+    left: 10px;
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
@@ -211,6 +244,11 @@ footer{
   animation-duration: 2s;
 }
 
+
+
+iframe{
+    width: 100%;
+}
 @-webkit-keyframes fade {
   from {opacity: .7} 
   to {opacity: 1}
