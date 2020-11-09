@@ -58,11 +58,13 @@ body{
     display: none;
 }
 
+
 #media-banner > img{
     max-height: 100%;
     width: 100%;
-    
 }
+
+
 #media-title{
     position: absolute;
     align-self: center;
@@ -71,6 +73,8 @@ body{
     padding: 0px;
     text-align: center;
 }
+
+
 #media{
     display:flex;
     flex-wrap: wrap;
@@ -79,12 +83,14 @@ body{
     display: none;
 }
 
+
 #media > *{
     max-width: 100%;
     height: auto;
     width: 33%; 
     margin: 1px;
 }
+
 
 #media > article{
 }
@@ -140,6 +146,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
 }
+
 
 .slide-content > img {
     height: auto;
@@ -245,10 +252,11 @@ footer{
 }
 
 
-
 iframe{
     width: 100%;
 }
+
+
 @-webkit-keyframes fade {
   from {opacity: .7} 
   to {opacity: 1}
@@ -259,3 +267,12 @@ iframe{
   to {opacity: 1}
 }
 
+
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 600px) {
+        #media-banner > img{
+            max-height: 30%;
+            width: 100%;
+        }
+}
