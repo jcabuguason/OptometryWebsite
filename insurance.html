@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Insurance - I See Eyecare</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" type = "text/css" href="insurancestylesheets.css"> 
@@ -24,6 +24,11 @@ and open the template in the editor.
             <a class  = "nav-link" href = "brands.html">Featured Brands</a>
             <a  href = "#maps"><img src = "images/mapicon.png"></a>
         </nav>
+        
+        <nav id = "mobile-navbar" >
+            <img id = "navbar-button" src = "images/mapicon.png" >
+        </nav>
+        
         
          <header>
             <img id = "header-img"  src = "https://static.wixstatic.com/media/b904c8_31731766ac164900901846e31b3f7f97~mv2.png/v1/fill/w_358,h_100,al_c,q_85,usm_0.66_1.00_0.01/logo_PNG.webp">
@@ -48,29 +53,6 @@ and open the template in the editor.
                 <span class = "company"></span>
         </div>
         
-        <script>
-            var prevScrollpos = window.pageYOffset;
-
-var navBar = document.getElementById("navbar");
-window.onscroll = function() {
-    
-// navigation bar hidden on scroll down
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos ) {
-    navBar.style.top = "0";
-  } else {
-    navBar.style.top = "-110px";
-  }
-  if(currentScrollPos < 10){
-      navBar.style.boxShadow = "none";
-  }
-  else{
-      navBar.style.boxShadow = "0.5px 0.5px 50px 5px rgba(0,0,0,0.5)";
-  }
-  prevScrollpos = currentScrollPos;
- 
-};
-
-        </script>
+       <script src = "app.js"></script>
     </body>
 </html>
