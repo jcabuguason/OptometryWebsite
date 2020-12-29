@@ -20,8 +20,13 @@ and open the template in the editor.
     margin-top: 60px;
 }
 
+.right-service{
+    flex-direction: row-reverse;
+}
+
+
 .service-img{
-  max-width: 100%;
+  max-width: 400px;
   height: auto;
 }
 
@@ -38,8 +43,13 @@ and open the template in the editor.
 /* Media Queries: Tabled Portrait */
 @media screen and (max-width: 700px) {
     .services{
+        display: inline-block;
         flex-direction: column;
         align-content: center;
+    }
+    
+    .service-img{
+        max-width: 100%;
     }
 }
     

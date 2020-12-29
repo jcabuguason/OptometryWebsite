@@ -22,11 +22,13 @@ body{
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8));
 }
 
+
 .banner-imgs{
     display: inline-block;
     height: 400px;
     width: 100%;
 }
+
 
 #image-nav{
     display: flex;
@@ -38,6 +40,8 @@ body{
     padding: 0px;
 }
 
+
+
 .dot{
     padding: 0px;
     margin: 0px 3px;    
@@ -47,9 +51,12 @@ body{
     border-radius: 100%;
 }
 
+
+
 .dot:hover{
     cursor: pointer;
 }
+
 
 
 #media-banner{
@@ -59,10 +66,12 @@ body{
 }
 
 
+
 #media-banner > img{
     max-height: 100%;
     width: 100%;
 }
+
 
 
 #media-title{
@@ -75,6 +84,7 @@ body{
 }
 
 
+
 #media{
     display:flex;
     flex-wrap: wrap;
@@ -82,6 +92,7 @@ body{
     justify-content: center;
     display: none;
 }
+
 
 
 #media > *{
@@ -92,8 +103,11 @@ body{
 }
 
 
+
 #media > article{
 }
+
+
 
 #hours{
     width: 100%;
@@ -105,24 +119,39 @@ body{
     color: white;
 }
 
+
+
 #hours > *{
     color: navy;
 }
+
+
+
 #hours > p{
     line-height: 2px;
 }
 
+
+
 #insta-feed{
-    width: 60%;
+    width: 80%;
+    height: 90%;
 }
+
+
 
 #parent-insta-feed{
     display: flex;
     justify-content: center;
 }
+
+
+
 #curator-feed-default-feed-layout{
     
 }
+
+
 
 footer{
     display: flex;
@@ -163,6 +192,7 @@ footer{
     background: blue;
     padding: 20px;
 }
+
 
 
 /* Slideshow container */

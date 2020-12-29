@@ -45,52 +45,12 @@ navBarButton.onclick = function(){
     }
 };
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-
-
-var banner1 = document.getElementById("banner1");
-var bannerImages =document.getElementsByClassName("banner-imgs");
-var bannerLinks = document.getElementsByClassName("dot");
-
-document.querySelectorAll('.dot').forEach(item => {
-
-    item.addEventListener('click', event => {
-        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
- });
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  
-    if (n > slides.length) {
-      slideIndex = 1;
-   }  
-  
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-    
-  
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+});

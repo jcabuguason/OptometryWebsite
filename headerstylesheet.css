@@ -83,6 +83,11 @@ header{
     padding: 100px 0px 100px;
 }
 
+#header-img{
+    height:auto;
+    max-width: 480px;
+}
+
 #maps{
     left: 10px;
     width: 99%;
@@ -94,6 +99,7 @@ header{
 }
 
 footer{
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -117,6 +123,10 @@ footer{
         justify-content: center;
        }
        
+       #mapbutton{
+           display: none;
+       }
+       
        #mobile-navbar{
            display: flex;
            flex-direction: row-reverse;
@@ -126,5 +136,8 @@ footer{
            align-self: center;
             height: 40px;
         }
+        
+        
+        
        
 }
