@@ -53,6 +53,10 @@ h2{
     background: #bbb;
     padding: 200px;
 }
+.company >img {
+    max-width: 180px;
+    height: auto;
+}
 
 /* Media Queries: Tabled Portrait */
 @media screen and (max-width: 600px) {
