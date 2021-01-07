@@ -185,4 +185,12 @@ iframe{
             max-height: 30%;
             width: 100%;
         }
+        
+        #contact-details{
+    flex-direction: column-reverse;
+}
+
+    #insta-feed{
+    width: 100%;
+}
 }
