@@ -23,16 +23,16 @@ hr{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 70%;
+    width: 80%;
 }
 .brands{
     display: flex;
     flex-direction: column;
     margin: 20px;
-    padding: 80px 20px 20px 20px;
+    padding: 60px 20px 60px 20px;
     height: 200px;
     width: 300px;
     background: whitesmoke;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }

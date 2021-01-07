@@ -15,7 +15,7 @@ and open the template in the editor.
     width: 100%;
     background: black;
     background-position-y: -400px;
-    background-image: url("https://github.com/jcabuguason/OptometryWebsite/blob/master/Storepictures/storepic2.png?raw=true");
+    background-image: url("Storepictures/storepic2.png");
     background-size: cover;
     background-attachment: fixed;
 }
