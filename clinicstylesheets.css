@@ -50,8 +50,9 @@ and open the template in the editor.
     
     #parallax{
         height: 200px;
-        background-position-y: 80px;
-        background-position-x: -120px;
+         background-size: cover;
+         background-position-y: -100px;
+          background-attachment:initial;
     }
     
 }
